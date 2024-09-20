@@ -1,5 +1,16 @@
 import './App.css'
+import { useState } from 'react';
+
 export function FolowCard (props){
+    const [isFollow, setisFollow] = useState(props.estado);
+    
+    const cambiarEstado = () => {
+        setisFollow(!isFollow)
+    }
+
+    const text = isFollow ? 'Suigiendo' : 'Seguir';
+    const btnClassNameFollow = isFollow ? 'card_btn' : 'card_btn is_follow';
+
     return(
     <article className = "content_card">
         <div className="card_content_img">
@@ -10,7 +21,7 @@ export function FolowCard (props){
             <span className="card_text_email"> @{props.email}</span>
         </div>
         <div className="card_content_btn">
-            <button className="card_btn"> {props.estado} </button>
+            <button className= {`${btnClassNameFollow}`} onClick={cambiarEstado}> {text} </button>
         </div>
     </article>
     )

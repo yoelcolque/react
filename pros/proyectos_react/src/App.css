@@ -40,3 +40,8 @@
         padding: 1rem;
         
     }
+
+    .is_follow{
+        background-color:  rgb(167, 6, 6);
+        color: white;
+    }

@@ -5,9 +5,11 @@ import './index.css'
 
 root = ReactDOM.createRoot(document.getElementById('root'))
 
+const elemento = <span> HOLA MUNDO</span>
 
 root.render(
   <>
     <App/>
+    {elemento}
   </>
 )
