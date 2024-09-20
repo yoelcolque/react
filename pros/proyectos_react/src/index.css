@@ -1,0 +1,10 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.content_follow{
+    flex-direction: column;
+    gap: 5rem;
+    background-color: aqua;
+}
